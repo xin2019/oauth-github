@@ -8,13 +8,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * <p>
- * Github 登录 前置控制器
- *
- * @author java997.com
- * @since 2019-05-25
- */
 @Controller
 @RequestMapping("/account/github")
 public class GithubLoginController {
