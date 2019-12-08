@@ -11,13 +11,6 @@ import java.util.Map;
 import java.io.PrintWriter;
 import java.util.List;
 
-/**
- * <p>
- * Http 请求工具类
- *
- * @author java997.com
- * @since 2019-05-25
- */
 public class HttpUtil {
 
     /**
