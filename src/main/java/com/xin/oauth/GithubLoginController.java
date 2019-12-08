@@ -8,14 +8,21 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <p>
+ * Github 登录 前置控制器
+ *
+ * @author java997.com
+ * @since 2019-05-25
+ */
 @Controller
 @RequestMapping("/account/github")
 public class GithubLoginController {
     
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String githubLogin() {
-//        String githubState = "aa";
-        return "redirect:https://github.com/login/oauth/authorize?client_id=8153d4e6cb48a106b568&scope=user,public_repo";
+        String githubState = "adgasgdsdhgi";
+        return "redirect:https://github.com/login/oauth/authorize?client_id=8153d4e6cb48a106b568&redirect_uri=http://127.0.0.1:8080/account/github/callback&state=" + githubState;
     }
 
     @RequestMapping(value = "/callback", method = RequestMethod.GET)
